@@ -1,12 +1,24 @@
-# ROS 2 build artifacts
+# --- ROS 2 Build Artifacts ---
+# Ignore the entire build, install, and log directories at the root
 build/
 install/
 log/
 
-# Python bytecode
+# --- Python Artifacts ---
+# Ignore compiled python files generated during build/install
 **/__pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Local IDE settings (optional but recommended)
+# --- IDE & System Files ---
 .vscode/
 .idea/
+.DS_Store
+*.swp
+*.bak
+
+# --- Precision Mesh Handling ---
+# We keep the meshes in 'src/' because they are part of the description package.
+# This prevents accidentally tracking any temporary mesh copies found in 'install/'
+install/*/share/*/meshes/*
