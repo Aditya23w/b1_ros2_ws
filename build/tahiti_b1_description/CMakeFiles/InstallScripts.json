@@ -1,7 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/aditya/b1_ros2_ws/build/tahiti_b1_description/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
